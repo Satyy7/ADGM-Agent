@@ -1,0 +1,82 @@
+{
+  "process": "Company Incorporation",
+  "documents_uploaded": 1,
+  "required_documents": 8,
+  "missing_documents": [
+    "Articles of Association",
+    "Memorandum of Association",
+    "Board Resolution",
+    "Incorporation Application Form",
+    "UBO Declaration Form",
+    "Register of Members and Directors",
+    "Change of Registered Address Notice"
+  ],
+  "issues_found": [
+    {
+      "section": "Company Name",
+      "problematic_text": "Sample Global Holdings LLC",
+      "issue": "Incorrect legal form suffix. 'LLC' is not the correct designation for a 'Private Company Limited by Shares' in ADGM.",
+      "citation": "Part 3, Section 31 of the ADGM Companies Regulations 2020 requires a private company limited by shares to use 'Limited' or 'Ltd.' as the last word of its name.",
+      "severity": "High",
+      "suggestion": "Amend the company name to 'Sample Global Holdings Limited' or 'Sample Global Holdings Ltd.' to comply with the regulations for a Private Company Limited by Shares.",
+      "document": "Multiple_Shareholder_Resolution_input.docx"
+    },
+    {
+      "section": "General",
+      "problematic_text": "disputes shall be resolved in UAE Federal Courts instead of ADGM Courts.",
+      "issue": "Incorrect Jurisdiction. Companies incorporated in ADGM are subject to the jurisdiction of the ADGM Courts.",
+      "citation": "ADGM Courts, Civil Evidence, Judgments, Enforcement and Judicial Appointments Regulations 2015 establish the exclusive jurisdiction of ADGM Courts for civil and commercial matters within ADGM's territory.",
+      "severity": "High",
+      "suggestion": "Remove this clause entirely, or amend it to correctly state that the ADGM Courts have jurisdiction over any disputes.",
+      "document": "Multiple_Shareholder_Resolution_input.docx"
+    },
+    {
+      "section": "Signature of Incorporating Shareholders",
+      "problematic_text": "Shareholder’s Signature: [BLANK]",
+      "issue": "Unsigned resolution. A resolution is not legally valid until it is signed by the incorporating members.",
+      "citation": "A resolution is legally invalid without the signature(s) of the member(s) passing it. The Reference Text states the 'resolution for incorporation signed by all founding members' is required as evidence of appointment.",
+      "severity": "High",
+      "suggestion": "The resolution must be signed and dated by all named incorporating shareholders to be considered valid.",
+      "document": "Multiple_Shareholder_Resolution_input.docx"
+    },
+    {
+      "section": "Appointment of Authorised Signatory(ies)",
+      "problematic_text": "Signing Authority: Jointly",
+      "issue": "Ambiguous signing authority. The resolution specifies a 'Jointly' signing authority but lists only one authorised signatory.",
+      "citation": "General corporate governance principles require clarity on signing authorities to avoid legal and operational ambiguity. This creates an unenforceable instruction.",
+      "severity": "Medium",
+      "suggestion": "Either appoint at least one more authorised signatory to act jointly with John Doe, or change the signing authority to 'Singly'.",
+      "document": "Multiple_Shareholder_Resolution_input.docx"
+    },
+    {
+      "section": "Appointment of Authorised Signatory(ies)",
+      "problematic_text": "Name: John Doe",
+      "issue": "Missing mandatory signatory information. The resolution does not confirm if at least one signatory meets ADGM's residency requirements.",
+      "citation": "As per ADGM Registration Authority Guidance, 'At least one of the appointed signatories must be a UAE national, GCC national or hold a valid UAE residence visa.'",
+      "severity": "High",
+      "suggestion": "The application must demonstrate that at least one appointed signatory is a UAE/GCC national or holds a valid UAE residence visa. This should be confirmed and supporting documents prepared.",
+      "document": "Multiple_Shareholder_Resolution_input.docx"
+    },
+    {
+      "section": "Share Capital",
+      "problematic_text": "NOTE: Amounts paid/unpaid not specified.",
+      "issue": "Incomplete share capital information. The resolution fails to state the amount paid up on the issued shares.",
+      "citation": "Section 156 of the ADGM Companies Regulations 2020 requires a statement of capital and initial shareholdings, which includes the aggregate amount unpaid on the total number of shares.",
+      "severity": "Medium",
+      "suggestion": "Amend the resolution to specify the amount paid and/or unpaid on the shares. For example: 'Amount of Issued Shares: 50,000 USD, fully paid'.",
+      "document": "Multiple_Shareholder_Resolution_input.docx"
+    },
+    {
+      "section": "Appointment of Director(s)",
+      "problematic_text": "Name: Jane Smith\n\nType: Individual",
+      "issue": "Missing nominee declaration. The resolution does not state whether the director is acting as a nominee, which is a required declaration for the application.",
+      "citation": "ADGM Registration Authority Guidance requires a 'Nominee Arrangement Confirmation Form' to be submitted for all directors, confirming if the role is held on behalf of someone else. This must be submitted even if the answer is 'no'.",
+      "severity": "Medium",
+      "suggestion": "Ensure the Nominee Arrangement Confirmation Form for Jane Smith is completed and submitted as part of the incorporation application, declaring whether or not the directorship is a nominee position.",
+      "document": "Multiple_Shareholder_Resolution_input.docx"
+    }
+  ],
+  "reviewed_documents": {
+    "Multiple_Shareholder_Resolution_input.docx": "outputs\\reviewed_Multiple_Shareholder_Resolution_input.docx"
+  }
+}
